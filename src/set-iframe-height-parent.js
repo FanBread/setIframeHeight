@@ -121,7 +121,7 @@
 
       $iframe.data('setIframeHeight_id', data.iframeId);
 
-      $iframe.height(data.height);
+      $iframe.attr('height', data.height);
 
       var urlHasChanged = normalizeUrl($iframe.attr('data-iframeAutoHeight-currentSrc') || iframe.src) !== normalizeUrl(data.iframeSrc);
 
